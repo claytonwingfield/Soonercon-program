@@ -1,0 +1,57 @@
+html {
+	scroll-behavior: smooth;
+}
+.friday .saturday .sunday{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.date-time {
+    margin-left: auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.list-item-container{
+    flex-wrap: wrap;
+    box-sizing:border-box;
+    position:relative;
+    padding:3rem;
+    margin-bottom:1rem;
+    column-count: 4;
+    column-gap: 3rem;
+    vertical-align:middle;
+    display:inline-block;
+    border: 1px solid #016199;
+    margin-top: 1.50rem;
+    border-radius: 3px;
+    
+}
+
+
+
+.list-item-container:hover {
+    box-shadow: 0px 0px 2.0rem lightgray;
+}
+  
+
+  @media only screen and (min-width : 1px) and (max-width : 999px) {
+    .list-item-container  {
+        margin-bottom: 0.5rem;
+        height: 10%;
+        width: 100vw;
+        
+      
+    }
+    .list-item{
+        display:flex;
+        
+    }
+    
+    .list-item-container > .date-time{
+        min-width: 100%;
+    }
+}

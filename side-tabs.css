@@ -1,0 +1,73 @@
+/* vertical scrolling */
+.moving-tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  
+  
+}
+/* .scroll{
+  
+  height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+} */
+.side-item{
+  border-bottom: 3px solid darkgray;
+  padding: 1rem;
+}
+
+
+.moving-tabs .tab-navigation {
+  position: sticky;
+   top: 0;
+   z-index: 100;
+  margin-top: 3rem;
+  width: 20%;
+  
+ 
+}
+.moving-tabs .scrolling-tab-content {
+  flex: 1;
+  padding-left: 8rem;
+}
+
+.moving-tabs .tab-navigation  a {
+  color: #016199;
+  font-weight: 200em;
+  font-size: 1em;
+  
+}
+.moving-tabs .tab-navigation  a:hover {
+  color: black;
+  font-weight: 200em;
+  font-size: 1em;
+  
+  
+}
+
+
+
+.moving-tabs .tab-navigation ul li {
+  list-style: none;
+  line-height: 1em;
+  opacity: 0.7;
+  padding-left: 3.25rem;
+  padding-bottom: 2rem;
+  white-space: nowrap;
+  
+}
+
+
+@media only screen and (max-width: 999px ) {
+  .moving-tabs .tab-navigation {
+    display: none;
+  }
+  .moving-tabs .scrolling-tab-content {
+    padding-left: 0;
+  }
+  
+
+}
+

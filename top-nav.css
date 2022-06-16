@@ -1,0 +1,90 @@
+
+  .top-nav{
+    text-align:center;
+  }
+
+  .top-nav li{
+    display:inline-block;
+    margin:0 1.5rem 0 0;
+    
+  }
+  .top-nav-list{
+    background-color: #016199e6;
+  }
+ .top-nav li a{
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    display:block;
+    text-decoration:none;
+    
+  }
+  .top-nav-list li a{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+/* Fix Hover Color */
+  .top-nav li a:hover {
+    opacity:1;
+    color:rgb(199, 195, 195);
+  }
+
+  /* Moblie drop down, FIX */
+  .top-nav .mobile-view{
+    padding:1rem 1.25;
+    border-left:5px solid lightgray;
+    border-right:5px solid lightgray;
+    display:none;
+    line-height:1rem
+  }
+  .top-nav .mobile-view{
+    border: 1px solid black;
+    background-color: #016199e6;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 1em;
+    text-decoration:none;
+  }
+
+ 
+  /* FIX MOBILE NAV */
+  @media only screen and (min-width : 1px) and (max-width : 999px) {
+  
+    .top-nav .mobile-view {
+      display: inline-block;
+    }
+  
+    .top-nav ul {
+      position: absolute;
+      top: 3rem;
+      left: 0;
+      width: 100%;
+      display: none;
+      z-index: 1000;
+    }
+
+    #content-wraper .top-nav ul li {
+      display: block;
+      margin: 0;
+    }
+  
+    .top-nav .full-width {
+      position: relative;
+    }
+  
+    .top-nav ul li a {
+      border-top: 1px solid grey;
+      padding: 0.6 1.25px;
+    }
+  
+    .top-nav ul li a {
+      border-top: 1px solid black;
+    }
+  
+  }
+  
+
+/* MAYBE CHANGE */
