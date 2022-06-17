@@ -6,16 +6,27 @@
   align-items: flex-start;  
 }
 
-.side-item{
-  border-bottom: 3px solid darkgray;
-  padding: 1rem;
-  
+
+.full-text{
+  font-size: 1.5rem;
 }
 
-.short-text { 
+/* .short-text { 
   display: none; 
+} */
+.thursday-text::before { 
+  content: "Thursday, June 23rd";
+}
+.friday-text::before { 
+  content: "Friday, June 24th";
+}
+.saturday-text::before { 
+  content: "Saturday, June 25th";
 }
 
+.sunday-text::before{
+  content: "Sunday, June 26th";
+}
 
 .moving-tabs .tab-navigation {
   position: sticky;
@@ -55,25 +66,38 @@
 
 @media only screen and (max-width: 999px ) {
   
-  .short-text { 
+  .full-text { 
     display:inline-block; 
     text-align: center;
     color: white;
     font-size: 1.5em;
+    
   }
-  .full-text { 
-    display: none; 
+  .thursday-text::before { 
+    content: "Thu";
+  }
+  .friday-text::before { 
+    content: "Fri";
+  }
+  .saturday-text::before { 
+    content: "Sat";
+  }
+  
+  .sunday-text::before{
+    content: "Sun";
   }
   .side-item{
-    display: none;
+    padding: 2rem;
   }
 
   .moving-tabs{
     flex-direction: column;
+    margin: 0;
   }
   .moving-tabs .tab-navigation{
     position: fixed;
      bottom: 0;
+     margin: 0;
   }
   .moving-tabs .tab-navigation ul li{
     opacity: 1;
@@ -83,7 +107,7 @@
   }
   .menu-list {
     display: flex;
-    width: 95vw;
+    width: 100vw;
     background-color: #016199;
     margin: 0;
     padding: 0;
@@ -101,12 +125,15 @@
   .tab-navigation{
     display: flex;
     flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
   }
 
   
   .moving-tabs .scrolling-tab-content {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0rem;
+    
   }
 
 }
