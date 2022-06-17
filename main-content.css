@@ -1,17 +1,18 @@
 html {
 	scroll-behavior: smooth;
 }
+
 .friday .saturday .sunday{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.date-time {
-    margin-left: auto;
-}
 a{
     color: black;
     text-decoration: none;
+}
+.date{
+    margin: 1rem;
 }
 
 
@@ -40,18 +41,20 @@ a{
 
   @media only screen and (min-width : 1px) and (max-width : 999px) {
     .list-item-container  {
+        display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
         margin-bottom: 0.5rem;
-        height: 10%;
-        width: 100vw;
+        width: 95vw;
         
       
     }
+    .date{
+        margin: 2rem;
+        text-align: center;
+    }
     .list-item{
-        display:flex;
-        
+        margin-bottom: 1rem;
     }
     
-    .list-item-container > .date-time{
-        min-width: 100%;
-    }
 }

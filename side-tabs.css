@@ -3,19 +3,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: flex-start;
-  
-  
+  align-items: flex-start;  
 }
-/* .scroll{
-  
-  height: 300px;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-} */
+
 .side-item{
   border-bottom: 3px solid darkgray;
   padding: 1rem;
+  
+}
+
+.short-text { 
+  display: none; 
 }
 
 
@@ -23,13 +21,10 @@
   position: sticky;
    top: 0;
    z-index: 100;
-  margin-top: 3rem;
+  margin-top: 5rem;
   width: 20%;
-  
- 
 }
 .moving-tabs .scrolling-tab-content {
-  flex: 1;
   padding-left: 8rem;
 }
 
@@ -43,8 +38,6 @@
   color: black;
   font-weight: 200em;
   font-size: 1em;
-  
-  
 }
 
 
@@ -52,7 +45,7 @@
 .moving-tabs .tab-navigation ul li {
   list-style: none;
   line-height: 1em;
-  opacity: 0.7;
+  opacity: 0.8;
   padding-left: 3.25rem;
   padding-bottom: 2rem;
   white-space: nowrap;
@@ -61,13 +54,62 @@
 
 
 @media only screen and (max-width: 999px ) {
-  .moving-tabs .tab-navigation {
+  
+  .short-text { 
+    display:inline-block; 
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+  }
+  .full-text { 
+    display: none; 
+  }
+  .side-item{
     display: none;
   }
-  .moving-tabs .scrolling-tab-content {
-    padding-left: 0;
+
+  .moving-tabs{
+    flex-direction: column;
+  }
+  .moving-tabs .tab-navigation{
+    position: fixed;
+     bottom: 0;
+  }
+  .moving-tabs .tab-navigation ul li{
+    opacity: 1;
+    line-height: 2.5rem;
+    padding-left: 0rem;
+    
+  }
+  .menu-list {
+    display: flex;
+    width: 95vw;
+    background-color: #016199;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    border-radius: 3px;
   }
   
 
+  .menu-content{
+    display: flex;
+    height: 6vh;
+    width: 10vw;
+    justify-content: center;
+  }
+  .tab-navigation{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  
+  .moving-tabs .scrolling-tab-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
+
+
 
